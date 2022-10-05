@@ -1,0 +1,66 @@
+# Site settings
+name: "Dr. Whitney Lisenbee Research Group @ UGA"
+title: Integrated Hydrologic Systems Research Group
+#subtitle: adaptive infrastructure for resilient communities
+subtitle:
+email: wlisenbee@psu.edu
+description: "The Integrated Hydrologic Systems Research Group at the University of Georgia (Starting 2023)"
+baseurl: ""
+url: "https://wlisenbee.github.io"
+permalink: /:categories/:title.html
+office: 2209 ISTEM2
+twitter: whitney.lisenbee
+github: wlisenbee
+
+
+# logos and images to use
+logo_cover: /assets/img/logos/header-rpy.jpg
+logo_logo: /assets/img/logos/james.jpg
+logo_james: /assets/img/logos/james.jpg
+logo_icon: /assets/img/logos/logo.ico
+logo_ricelogo: /assets/img/logos/rice.jpg
+logo_labgroup: /assets/img/research/harvey-martinez-ng.jpeg
+logo_research: /assets/img/research/causal-chain.png
+
+# RSS
+rss_path: feeds/
+rss_name: rss.xml
+
+# Settings for deploy rake task
+safe: False
+lsi: False
+username: dossgollin-lab
+repo: dossgollin-lab.github.io
+branch: master
+destination: _site
+production_url: https://wlisenbee.github.io
+source_url: https://wlisenbee.github.io/website
+
+# Page Set
+pages_list:
+  About: "/about"
+  Feed: "/atom.xml"
+
+#exclude
+exclude:
+  - "scripts"
+  - "README.md"
+  - ".DS_Store"
+  - "assets/less/"
+  - "vendor"
+  - "Makefile"
+
+# gems and other configs
+plugins_dir: "_plugins"
+plugins:
+  - jekyll-scholar
+
+scholar:
+  style: apa
+  source: _bibliography
+  bibliography: library.bib
+  bibliography_template: bib
+  sort_by: date,year,month
+  order: descending
+  bibliography_list_tag: div
+  bibliography_item_tag: div

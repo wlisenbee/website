@@ -13,15 +13,6 @@ twitter: whitney.lisenbee
 github: wlisenbee
 
 
-# logos and images to use
-logo_cover: /assets/img/logos/header-rpy.jpg
-logo_logo: /assets/img/logos/james.jpg
-logo_james: /assets/img/logos/james.jpg
-logo_icon: /assets/img/logos/logo.ico
-logo_ricelogo: /assets/img/logos/rice.jpg
-logo_labgroup: /assets/img/research/harvey-martinez-ng.jpeg
-logo_research: /assets/img/research/causal-chain.png
-
 # RSS
 rss_path: feeds/
 rss_name: rss.xml
@@ -29,12 +20,12 @@ rss_name: rss.xml
 # Settings for deploy rake task
 safe: False
 lsi: False
-username: dossgollin-lab
-repo: dossgollin-lab.github.io
+username: wlisenbee
+repo: wlisenbee.github.io/website2
 branch: master
 destination: _site
 production_url: https://wlisenbee.github.io
-source_url: https://wlisenbee.github.io/website
+source_url: https://wlisenbee.github.io/website2
 
 # Page Set
 pages_list:
@@ -46,7 +37,7 @@ exclude:
   - "scripts"
   - "README.md"
   - ".DS_Store"
-  - "assets/less/"
+  - "less/"
   - "vendor"
   - "Makefile"
 
